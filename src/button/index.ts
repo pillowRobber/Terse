@@ -1,5 +1,3 @@
-import WButton from './Button.vue'
+import WButton from "./Button.vue";
 
-export {
-  WButton
-}
+export { WButton };

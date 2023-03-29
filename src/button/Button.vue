@@ -19,12 +19,12 @@
 
 <script lang="ts" setup name="WButton">
 import "uno.css";
-import { defineProps } from 'vue';
+import { defineProps } from "vue";
 // defineOptions({ name: "WButton"});
 
 const props = defineProps({
-  color: { type: String,default: 'blue' }
-})
+  color: { type: String, default: "blue" },
+});
 </script>
 <!-- <script lang="ts">
 import 'uno.css'
@@ -35,4 +35,3 @@ export default {
   }
 }
 </script> -->
-

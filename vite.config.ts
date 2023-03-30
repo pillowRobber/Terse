@@ -1,30 +1,30 @@
-import { defineConfig } from "vite"
-import vue from "@vitejs/plugin-vue"
-import vueJsx from '@vitejs/plugin-vue-jsx'
-import Unocss from "./config/unocss"
-import vueSetupExtend from 'vite-plugin-vue-setup-extend'
+import { defineConfig } from "vite";
+import vue from "@vitejs/plugin-vue";
+import vueJsx from "@vitejs/plugin-vue-jsx";
+import Unocss from "./config/unocss";
+import vueSetupExtend from "vite-plugin-vue-setup-extend";
 
 const rollupOptions = {
-  external: ['vue','vue-router'],
+  external: ["vue", "vue-router"],
   output: {
     assetFileNames: `assets/[name].css`,
     globals: {
-      vue: 'Vue'
-    }
-  }
-}
+      vue: "Vue",
+    },
+  },
+};
 
 export default defineConfig({
-  plugins: [vue(), vueJsx(), Unocss(),vueSetupExtend()],
+  plugins: [vue(), vueJsx(), Unocss(), vueSetupExtend()],
   build: {
     rollupOptions,
-    minify:false,
+    minify: false,
     lib: {
-      entry: './src/entry.ts',
-      name: 'Terse',
-      fileName: 'terse',
-      formats: ['es', 'umd', 'iife']
+      entry: "./src/entry.ts",
+      name: "Terse",
+      fileName: "terse",
+      formats: ["es", "umd", "iife"],
     },
-    cssCodeSplit: true
-  }
-})
+    cssCodeSplit: true,
+  },
+});

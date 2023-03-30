@@ -6,7 +6,8 @@
 		"docs:build": "vitepress build docs",
 		"docs:serve": "vitepress serve docs",
 		"lint": "eslint --fix --ext .ts,.vue src",
-		"format": "prettier --write \"src/**/*.ts\" \"src/**/*.vue\""
+		"format": "prettier --write \"src/**/*.ts\" \"src/**/*.vue\"",
+		"test": "vitest"
 	},
 	"devDependencies": {
 		"@iconify-json/ic": "^1.1.13",
@@ -15,19 +16,22 @@
 		"@vitejs/plugin-vue": "^4.1.0",
 		"@vitejs/plugin-vue-jsx": "^3.0.1",
 		"@vue/eslint-config-prettier": "^7.1.0",
+		"@vue/test-utils": "^2.3.2",
 		"babel-eslint": "^10.1.0",
 		"eslint": "^8.37.0",
 		"eslint-formatter-pretty": "^5.0.0",
 		"eslint-plugin-json": "^3.1.0",
 		"eslint-plugin-prettier": "^4.2.1",
 		"eslint-plugin-vue": "^9.10.0",
+		"happy-dom": "^8.9.0",
 		"prettier": "^2.8.7",
 		"typescript": "^5.0.2",
 		"unocss": "^0.50.6",
 		"vite": "^4.2.1",
 		"vite-plugin-vue-setup-extend": "^0.4.0",
 		"vitepress": "1.0.0-alpha.61",
-		"vitepress-theme-demoblock": "^2.0.2"
+		"vitepress-theme-demoblock": "^2.0.2",
+		"vitest": "^0.29.8"
 	},
 	"dependencies": {
 		"vue": "^3.2.47"

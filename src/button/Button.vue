@@ -1,37 +1,31 @@
 <template>
   <button
-    :class="`      
-      py-2 
-      px-4 
-      font-semibold 
-      rounded-lg 
-      shadow-md 
-      text-white 
-      bg-${color}-500 
-      hover:bg-${color}-700 
-      border-none 
-      cursor-pointer
-      mx-1`"
+    :class="`
+    py-[8px]
+    px-[15px]
+    mx-1
+    font-semibold
+    text-base
+    text-white
+    cursor-pointer
+    ${type + (plain ? '-plain' : '')}
+    ${'hover:' + type + '-hover' + (plain ? '-plain' : '')}
+    ${round ? 'rounded-[20px]' : 'rounded-[4px]'}
+    `"
   >
-    <slot></slot>
+    <i v-if="icon" :class="`i-ic-baseline-${props.icon} p-3`"></i>
+    <span v-if="$slots.default"><slot></slot></span>
   </button>
 </template>
 
 <script lang="ts" setup name="WButton">
 import "uno.css";
-import { defineProps } from "vue";
-// defineOptions({ name: "WButton"});
 
 const props = defineProps({
-  color: { type: String, default: "blue" },
+  type: { type: String, default: "dfault" },
+  plain: { type: Boolean, default: false },
+  round: { type: Boolean, default: false },
+  circle: { type: Boolean, default: false },
+  icon: { type: String, default: "" },
 });
 </script>
-<!-- <script lang="ts">
-import 'uno.css'
-export default {
-  name: "WButton",
-  props: {
-    color: { type: String, default: 'blue' }
-  }
-}
-</script> -->

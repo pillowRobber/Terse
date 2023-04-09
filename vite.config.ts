@@ -2,7 +2,7 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import vueJsx from "@vitejs/plugin-vue-jsx";
-import Unocss from "./config/unocss";
+import Unocss from "./unocss.config";
 import vueSetupExtend from "vite-plugin-vue-setup-extend";
 
 const rollupOptions = {

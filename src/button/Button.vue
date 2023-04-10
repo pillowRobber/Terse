@@ -11,9 +11,10 @@
     ${type + (plain ? '-plain' : '')}
     ${'hover:' + type + '-hover' + (plain ? '-plain' : '')}
     ${round ? 'rounded-[20px]' : 'rounded-[4px]'}
+    ${circle ? 'rounded-[50%] text-[#606266] px-[8px]' : 'rounded-[4px]'}
     `"
   >
-    <i v-if="icon" :class="`i-ic-baseline-${props.icon} p-3`"></i>
+    <i v-if="icon" :class="`i-ic-baseline-${icon} p-3`"></i>
     <span v-if="$slots.default"><slot></slot></span>
   </button>
 </template>

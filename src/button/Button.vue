@@ -17,7 +17,6 @@
     :disabled="disabled"
   >
     <i v-if="icon" :class="`i-ic-baseline-${icon} p-3`"></i>
-    <i v-if="loading" class="i-eos-icons-bubble-loading p-3"></i>
     <span v-if="$slots.default"><slot></slot></span>
   </button>
 </template>

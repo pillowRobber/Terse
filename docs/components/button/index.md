@@ -52,7 +52,9 @@
 
 通过简单的配置自定义图标，或者改变图标相对文字位置。
 
-:::demo 使用`icon` 选择图标
+查看更多图标（使用自定义方式）： https://icones.js.org/collection/ic
+
+:::demo 使用`icon` 选择图标 
 
 ```vue
 <template>
@@ -63,6 +65,29 @@
     <w-button icon="add" type="primary">add</w-button>
     <w-button icon="download" type="primary">download</w-button>
     <w-button type="primary">upload 自定义图标<i class="i-ic-baseline-upload p-3"></i></w-button>
+  </div>
+</template>
+```
+
+:::
+
+## 禁用状态
+
+使用 `disabled` 属性来定义按钮是否被禁用。
+
+该属性接受一个 `Boolean` 类型的值。
+
+:::demo 
+
+```vue
+<template>
+  <div style="margin-bottom:20px;">
+    <w-button disabled>Default</w-button>
+    <w-button disabled type="primary">Primary</w-button>
+    <w-button disabled type="success">Success</w-button>
+    <w-button disabled type="info">Info</w-button>
+    <w-button disabled type="warning">Warning</w-button>
+    <w-button disabled type="danger">Danger</w-button>
   </div>
 </template>
 ```

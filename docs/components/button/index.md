@@ -58,7 +58,7 @@
 
 ```vue
 <template>
-  </div>
+  <div>
     <div style="margin-bottom:20px;">
     <w-button icon="search" type="primary"></w-button>
     <w-button icon="delete" type="primary"></w-button>

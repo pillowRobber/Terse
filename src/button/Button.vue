@@ -11,7 +11,7 @@
     ${type + (plain ? '-plain' : '')}
     ${'hover:' + type + '-hover' + (plain ? '-plain' : '')}
     ${round ? 'rounded-[20px]' : 'rounded-[4px]'}
-    ${circle ? 'rounded-[50%] text-[#606266] px-[8px]' : 'rounded-[4px]'}
+    ${circle ? 'rounded-[50%] text-[#606266] px-[8px]' : ''}
     ${disabled ? 'cursor-not-allowed opacity-50' : 'cursor-pointer'}
     `"
     :disabled="disabled"
